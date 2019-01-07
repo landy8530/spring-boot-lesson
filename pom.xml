@@ -18,6 +18,7 @@
     </parent>
     <modules>
         <module>spring-boot-lesson-1</module>
+        <module>annotation-driven-development</module>
     </modules>
 
     <name>spring-boot-lesson</name>
