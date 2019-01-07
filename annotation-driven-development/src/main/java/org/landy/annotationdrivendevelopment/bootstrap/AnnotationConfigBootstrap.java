@@ -1,7 +1,7 @@
-package org.spring.webmvc.auto.config.annotationdrivendevelopment.bootstrap;
+package org.landy.annotationdrivendevelopment.bootstrap;
 
-import org.spring.webmvc.auto.config.annotationdrivendevelopment.config.UserConfiguration;
-import org.spring.webmvc.auto.config.annotationdrivendevelopment.domain.User;
+import org.landy.annotationdrivendevelopment.domain.User;
+import org.landy.annotationdrivendevelopment.config.UserConfiguration;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**

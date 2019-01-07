@@ -1,6 +1,6 @@
-package org.spring.webmvc.auto.config.annotationdrivendevelopment.bootstrap;
+package org.landy.annotationdrivendevelopment.bootstrap;
 
-import org.spring.webmvc.auto.config.annotationdrivendevelopment.domain.User;
+import org.landy.annotationdrivendevelopment.domain.User;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**

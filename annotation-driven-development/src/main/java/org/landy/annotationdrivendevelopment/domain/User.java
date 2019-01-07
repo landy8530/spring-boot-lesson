@@ -1,4 +1,4 @@
-package org.spring.webmvc.auto.config.annotationdrivendevelopment.domain;
+package org.landy.annotationdrivendevelopment.domain;
 
 /**
  *

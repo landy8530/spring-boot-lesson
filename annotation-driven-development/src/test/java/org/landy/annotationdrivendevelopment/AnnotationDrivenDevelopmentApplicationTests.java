@@ -1,4 +1,4 @@
-package org.spring.webmvc.auto.config.annotationdrivendevelopment;
+package org.landy.annotationdrivendevelopment;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

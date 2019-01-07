@@ -6,7 +6,7 @@
 
 
     <bean name="user"
-          class="org.spring.webmvc.auto.config.annotationdrivendevelopment.domain.User">
+          class="org.landy.annotationdrivendevelopment.domain.User">
         <property name="name" value="Landy" />
     </bean>
 
