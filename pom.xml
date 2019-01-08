@@ -19,6 +19,7 @@
     <modules>
         <module>spring-boot-lesson-1</module>
         <module>annotation-driven-development</module>
+        <module>spring-java-beans</module>
     </modules>
 
     <name>spring-boot-lesson</name>
