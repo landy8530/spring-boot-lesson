@@ -10,6 +10,8 @@ import java.beans.PropertyEditorSupport;
 public class IdPropertyEditor extends PropertyEditorSupport {
 
     public void setAsText(String text) {
+        //text相当于事件源对应的值
+        //PropertyEditor source = (PropertyEditor) event.getSource();
         if (StringUtils.hasText(text)) {
             long id = Long.parseLong(text);
             setValue(id);

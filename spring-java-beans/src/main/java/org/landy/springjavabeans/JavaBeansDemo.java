@@ -3,6 +3,7 @@ package org.landy.springjavabeans;
 import org.landy.springjavabeans.domain.User;
 
 import java.beans.*;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.stream.Stream;
 
@@ -36,6 +37,17 @@ public class JavaBeansDemo {
             if ("id".equals(propertyName)) { // 属性名称等于 "id" , 类型 long
                 propertyDescriptor.setPropertyEditorClass(IdPropertyEditor.class);
                 PropertyEditor propertyEditor = propertyDescriptor.createPropertyEditor(user);
+//                propertyEditor.addPropertyChangeListener((event)->{
+//                    Object newValue = event.getNewValue(); //newValue会为空，可能是JDK的bug，故采用以下的事件源对象获取
+//                    Method setterMethod = propertyDescriptor.getWriteMethod();
+//                    try {
+//                        setterMethod.invoke(user, newValue);
+//                    } catch (IllegalAccessException e) {
+//                        e.printStackTrace();
+//                    } catch (InvocationTargetException e) {
+//                        e.printStackTrace();
+//                    }
+//                });
                 propertyEditor.addPropertyChangeListener(
                         new SetPropertyChangeListener(user,propertyDescriptor.getWriteMethod()));
                 // 触发事件，同时事件源 propertyEditor

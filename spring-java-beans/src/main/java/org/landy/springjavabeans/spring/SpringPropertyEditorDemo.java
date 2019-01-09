@@ -12,7 +12,7 @@ public class SpringPropertyEditorDemo {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext();
         context.setConfigLocation("context.xml");
         context.refresh();
-
+        //依赖查找
         User user = context.getBean("user",User.class);
 
         System.out.println(user);

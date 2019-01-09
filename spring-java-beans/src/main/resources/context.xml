@@ -3,6 +3,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd"
 >
 
+    <!--Spring是如何把此处配置的文本值转化为对应相应类型的字段值的？-->
+    <!--通过继承自PropertyEditorSupport的子类进行相应类型值的转化操作-->
     <bean id="user" class="org.landy.springjavabeans.domain.User">
         <property name="id" value="1"/>
         <property name="name" value="Landy"/>
