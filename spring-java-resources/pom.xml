@@ -54,14 +54,13 @@
 					<!--&lt;!&ndash; basedir：当前module所在的根目录 &ndash;&gt;-->
 					<!--<include>${basedir}</include>-->
 				<!--</includes>-->
-				<!--&lt;!&ndash;排除resource的路径&ndash;&gt;-->
+				<!--&lt;!&ndash;排除某个resource的路径&ndash;&gt;-->
 				<!--<excludes>-->
 					<!--<exclude>-->
 						<!--*.properties-->
 					<!--</exclude>-->
 				<!--</excludes>-->
 			<!--</resource>-->
-
 		<!--</resources>-->
 
 	</build>

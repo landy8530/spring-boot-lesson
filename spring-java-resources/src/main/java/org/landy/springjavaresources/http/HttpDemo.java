@@ -16,19 +16,19 @@ public class HttpDemo {
     public static void main(String[] args) throws Exception {
         //https://start.spring.io/
         // Spring RestTemplate
-//        RestTemplate restTemplate = new RestTemplate();
-//
-//        InputStream inputStreamFromRestTemplate =
-//                restTemplate.execute("https://start.spring.io/",
-//                        HttpMethod.GET,
-//                        request -> {
-//                        },
-//                        response -> {
-//                            return response.getBody();
-//                        }
-//                );
-//
-//        System.out.println(inputStreamFromRestTemplate);
+        RestTemplate restTemplate = new RestTemplate();
+
+        InputStream inputStreamFromRestTemplate =
+                restTemplate.execute("https://start.spring.io/",
+                        HttpMethod.GET,
+                        request -> {
+                        },
+                        response -> {
+                            return response.getBody();
+                        }
+                );
+
+        System.out.println(inputStreamFromRestTemplate);
 
         URL url = new URL("https://start.spring.io/");
 

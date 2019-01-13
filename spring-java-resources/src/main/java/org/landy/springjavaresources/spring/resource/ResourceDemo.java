@@ -38,7 +38,7 @@ public class ResourceDemo {
         });
 
         Resource resource = resourceLoader.getResource("cp:/application.properties");
-
+        //resource.getURL();
         InputStream inputStream = resource.getInputStream();
 
         String content = StreamUtils.copyToString(inputStream, Charset.forName("UTF-8"));

@@ -15,13 +15,14 @@ import java.nio.charset.Charset;
 public class FileDemo {
 
     public static void main(String[] args) throws IOException {
-//        File file1 = new File(""); //默认为用户路径
-//        System.out.println(file1.getAbsolutePath());
-//        System.out.println(System.getProperty("user.dir"));
+        File file1 = new File(""); //默认为用户路径
+        System.out.println(file1.getAbsolutePath());
+        System.out.println(System.getProperty("user.dir"));//用户当前工作路径
 
         File file = new File("D:\\projects\\idea_workspace\\spring-boot-lesson\\spring-java-resources\\src\\main\\resources\\application.properties");
 
         URL fileURL = file.toURI().toURL();
+        System.out.println(fileURL);
         //统一资源定位符 URL
 //        URL url = new URL("https://www.baidu.com"); // https 协议
 //        URL ftpURL = new URL("ftp://ftp.baidu.com"); // ftp 协议

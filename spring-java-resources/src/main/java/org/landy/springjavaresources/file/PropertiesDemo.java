@@ -1,7 +1,5 @@
 package org.landy.springjavaresources.file;
 
-import java.io.File;
-import java.io.FileReader;
 import java.io.InputStream;
 import java.util.Properties;
 
@@ -21,13 +19,10 @@ public class PropertiesDemo {
         //3. 利用ClassLoader，读取class path路径下的资源（相对路径）
         //Maven默认的Resource目录就会放到class path下
         ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+        //读取class path路径下的文件
         InputStream is = classLoader.getResourceAsStream("application.properties");
-
         properties.load(is);
-
-
         System.out.println(properties.getProperty("spring.application.name"));
-
     }
 
 }
