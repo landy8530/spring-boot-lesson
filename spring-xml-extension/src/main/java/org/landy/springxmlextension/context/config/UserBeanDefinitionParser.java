@@ -13,7 +13,7 @@ public class UserBeanDefinitionParser implements BeanDefinitionParser {
 
     @Override
     public BeanDefinition parse(Element element, ParserContext parserContext) {
-        // XML 配置: <gupao:user id="1" name="${name}" />
+        // XML 配置: <ehi:user id="1" name="${name}" />
         // 原始 String 类型 -> Long
         String id = element.getAttribute("id");
         // String 类型 -> Placeholder ${name}
@@ -24,7 +24,7 @@ public class UserBeanDefinitionParser implements BeanDefinitionParser {
         BeanDefinitionBuilder builder = BeanDefinitionBuilder.genericBeanDefinition(User.class);
         // 添加 Property 值，来自于 XML 配置
         builder.addPropertyValue("id", id);
-        builder.addPropertyValue("name", name);
+        builder.addPropertyValue("name", name);//Spring已经处理掉了Placeholder
         // 创建 BeanDefinition
         BeanDefinition beanDefinition =  builder.getBeanDefinition();
 
