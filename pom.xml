@@ -18,10 +18,6 @@
     </parent>
     <modules>
         <module>spring-boot-lesson-1</module>
-        <module>annotation-driven-development</module>
-        <module>spring-java-beans</module>
-        <module>spring-java-resources</module>
-        <module>spring-xml-extension</module>
     </modules>
 
     <name>spring-boot-lesson</name>
