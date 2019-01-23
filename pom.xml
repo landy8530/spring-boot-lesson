@@ -8,19 +8,12 @@
     <artifactId>spring-boot-lesson</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <!--<version>2.0.4.RELEASE</version>-->
-        <version>1.4.2.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
-    <modules>
-        <module>spring-boot-lesson-1</module>
-    </modules>
-
     <name>spring-boot-lesson</name>
+
+    <modules>
+        <module>spring-boot-1.x</module>
+        <module>spring-boot-2.x</module>
+    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
