@@ -19,7 +19,6 @@
 
     <modules>
         <module>jsp-in-spring-boot</module>
-        <module>spring-boot-jmx</module>
     </modules>
 
 </project>

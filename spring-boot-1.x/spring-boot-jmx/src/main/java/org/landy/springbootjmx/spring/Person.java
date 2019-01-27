@@ -11,7 +11,7 @@ public class Person {
     private String name;
     private String description;
 
-    @ManagedAttribute(defaultValue = "Landy", description = "This is a name column.")
+    @ManagedAttribute(defaultValue = "Landy", description = "This is a name field.")
     public String getName() {
         return name;
     }
@@ -20,6 +20,7 @@ public class Person {
         this.name = name;
     }
 
+    @ManagedAttribute(defaultValue = "This is Landy's description", description = "This is a description field.")
     public String getDescription() {
         return description;
     }
