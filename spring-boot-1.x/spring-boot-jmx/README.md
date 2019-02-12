@@ -15,7 +15,7 @@ JMX（Java Management Extensions）技术提供构建分布式、Web、模块化
 > ■ Agent level
 > ■ Distributed services level
 
-![1548556486361](C:\Users\Landy\AppData\Roaming\Typora\typora-user-images\1548556486361.png)
+![JMX](https://github.com/landy8530/spring-boot-lesson/raw/master/doc/spring-boot-1.x/jmx.png)
 
 ### 1.1 Instrumentation level
 
