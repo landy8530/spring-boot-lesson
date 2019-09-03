@@ -110,7 +110,7 @@ application.hello = hello jsp on spring boot
 
 按理说，以上完成后就可以运行顺利看到页面结果了，但是如果直接运行SpringApplication的main方法是不能看到结果的，报404.
 
-![1567522145977](https://github.com/landy8530/spring-boot-lesson/doc/spring-boot-1.x/jsp-on-spring-boot/1567522145977.png)
+![1567522145977](https://github.com/landy8530/spring-boot-lesson/blob/master/doc/spring-boot-1.x/jsp-on-spring-boot/1567522145977.png)
 
 经过网上一番寻找发现其根本原因，可以参见文章[为什么整合jsp后必须通过spring-boot:run方式启动]( https://segmentfault.com/a/1190000009785247)查看具体原因。
 
@@ -120,7 +120,7 @@ application.hello = hello jsp on spring boot
 
 使用命令 `maven clean spring-boot:run`或者使用idea的maven插件运行均可。
 
-![1567522493031](https://github.com/landy8530/spring-boot-lesson/doc/spring-boot-1.x/jsp-on-spring-boot/1567522493031.png)
+![1567522493031](https://github.com/landy8530/spring-boot-lesson/blob/master/doc/spring-boot-1.x/jsp-on-spring-boot/1567522493031.png)
 
 访问地址：http://localhost:7070/index
 
@@ -141,9 +141,9 @@ application.hello = hello jsp on spring boot
 
 3. 执行运行war包命令 `java -jar war包名称`
 
-   ![1567522902523](https://github.com/landy8530/spring-boot-lesson/doc/spring-boot-1.x/jsp-on-spring-boot/1567522902523.png)
+   ![1567522902523](https://github.com/landy8530/spring-boot-lesson/blob/master/doc/spring-boot-1.x/jsp-on-spring-boot/1567522902523.png)
 
-![1567522923421](https://github.com/landy8530/spring-boot-lesson/doc/spring-boot-1.x/jsp-on-spring-boot/1567522923421.png)
+![1567522923421](https://github.com/landy8530/spring-boot-lesson/blob/master/doc/spring-boot-1.x/jsp-on-spring-boot/1567522923421.png)
 
 4. 访问地址：http://localhost:7070/index
 
@@ -161,19 +161,19 @@ application.hello = hello jsp on spring boot
 
 4. 放在tomcat下的webapp目录,重命名即可。
 
-   ![1567523474393](https://github.com/landy8530/spring-boot-lesson/doc/spring-boot-1.x/jsp-on-spring-boot/1567523474393.png)
+   ![1567523474393](https://github.com/landy8530/spring-boot-lesson/blob/master/doc/spring-boot-1.x/jsp-on-spring-boot/1567523474393.png)
 
 5. 访问地址： http://localhost:8080/jsp-in-spring-boot 
 
    以上三种方式都可以成功访问到以下页面。
 
-   ![1567523590450](https://github.com/landy8530/spring-boot-lesson/doc/spring-boot-1.x/jsp-on-spring-boot/1567523590450.png)
+   ![1567523590450](https://github.com/landy8530/spring-boot-lesson/blob/master/doc/spring-boot-1.x/jsp-on-spring-boot/1567523590450.png)
 
 ### 2.6 问题说明
 
 在外部tomcat部署的时候，必须继承 `SpringBootServletInitializer`类，如果没有继承则会报404错误，如下页面所示，
 
-![1567524075833](https://github.com/landy8530/spring-boot-lesson/doc/spring-boot-1.x/jsp-on-spring-boot/1567524075833.png)
+![1567524075833](https://github.com/landy8530/spring-boot-lesson/blob/master/doc/spring-boot-1.x/jsp-on-spring-boot/1567524075833.png)
 
 
 
