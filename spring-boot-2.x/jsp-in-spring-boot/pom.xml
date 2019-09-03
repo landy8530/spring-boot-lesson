@@ -12,7 +12,7 @@
 
     <groupId>org.landy</groupId>
     <artifactId>jsp-in-spring-boot</artifactId>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
     <name>jsp-in-spring-boot</name>
 
     <properties>
@@ -38,7 +38,8 @@
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-jasper</artifactId>
-            <!--<scope>provided</scope>-->
+            <!-- 如果是外部tomcat部署的话，provided属性需要开启 -->
+            <scope>provided</scope>
         </dependency>
         <!-- jsp标签库 -->
         <dependency>

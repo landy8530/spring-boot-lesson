@@ -21,6 +21,7 @@
         <module>spring-boot-lesson-1</module>
         <module>spring-boot-lesson-2</module>
         <module>spring-boot-lesson-3</module>
+        <module>spring-boot-lesson-4</module>
     </modules>
 
 </project>

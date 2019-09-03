@@ -8,6 +8,6 @@
 <title>Index</title>
 </head>
 <body>
-    ${message}
+    <h1 style="color: red">Hello ${message}</h1>
 </body>
 </html>
