@@ -342,4 +342,6 @@ org.springframework.boot.autoconfigure.web.WebMvcProperties
 spring.mvc.view.prefix
 spring.mvc.view.suffix
 ```
+### 常见问题
 
+关于Spring Boot整合JSP遇到的问题参见文章：[[Spring Boot整合JSP遇到的问题解决思路](https://segmentfault.com/a/1190000020316429)] 即可。
