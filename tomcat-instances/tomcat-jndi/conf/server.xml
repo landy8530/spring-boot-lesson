@@ -94,7 +94,7 @@ characterEncoding=utf8
             maxAge="580000"
             type="javax.sql.DataSource"
             url="jdbc:mysql://localhost:3306/?useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=GMT"
-            driverClassName="com.mysql.jdbc.Driver"
+            driverClassName="com.mysql.cj.jdbc.Driver"
             username="root"
             password="landy8530"
     />
@@ -209,9 +209,10 @@ characterEncoding=utf8
         <!-- Access log processes all example.
              Documentation at: /docs/config/valve.html
              Note: The pattern used is equivalent to using pattern="common" -->
-        <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
+        <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".log"/>
 
-        <Context crossContext="true" docBase="C:\\03_code\\idea_workspace\\spring-boot-lesson\\spring-boot-1.x\\tomcat-jndi-demo\\target\\tomcat-jndi-demo" path="/jndi-demo"  reloadable="true"/></Host>
+        <Context crossContext="true" docBase="C:\\03_code\\idea_workspace\\spring-boot-lesson\\spring-boot-1.x\\tomcat-jndi-demo\\target\\tomcat-jndi-demo" path="/jndi-demo"  reloadable="true"/>
+      </Host>
     </Engine>
   </Service>
 </Server>
