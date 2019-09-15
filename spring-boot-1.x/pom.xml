@@ -23,6 +23,7 @@
         <module>spring-boot-lesson-3</module>
         <module>spring-boot-lesson-4</module>
         <module>spring-boot-lesson-5</module>
+        <module>spring-boot-lesson-6</module>
         <module>tomcat-jndi-demo</module>
     </modules>
 

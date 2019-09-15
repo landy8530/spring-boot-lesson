@@ -2,15 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
 	<parent>
-		<artifactId>spring-boot-1.x</artifactId>
 		<groupId>org.landy</groupId>
+		<artifactId>spring-boot-1.x</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
+
 	<groupId>org.landy</groupId>
-	<artifactId>spring-boot-jmx</artifactId>
+	<artifactId>spring-boot-lesson-6</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-jmx</name>
+	<packaging>war</packaging>
+
+	<name>spring-boot-lesson-6</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -22,16 +26,37 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
 		</dependency>
+
+		<!-- 分布式事务 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jta-bitronix</artifactId>
+        </dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+		</dependency>
+
+		<!-- 用得不多，常用C3P0 -->
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-        <dependency>
-            <groupId>org.jolokia</groupId>
-            <artifactId>jolokia-core</artifactId>
-        </dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.17</version>
+			<scope>runtime</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -47,5 +72,6 @@
 			</plugin>
 		</plugins>
 	</build>
+
 
 </project>

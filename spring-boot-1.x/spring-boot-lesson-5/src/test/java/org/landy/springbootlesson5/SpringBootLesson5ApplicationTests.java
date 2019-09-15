@@ -1,4 +1,4 @@
-package org.landy.springbootlesson4;
+package org.landy.springbootlesson5;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
